@@ -202,7 +202,7 @@ class ShareBasket extends \CBitrixComponent  implements Controllerable, Errorabl
 
                 $arRewrite = [];
                 if ($iParentID = IntVal($propEl["CML2_LINK"])) {
-                    $arElement = $APPLICATION->IncludeComponent("art-fresh:catalog.element", ".default", ["ID" => $iParentID, "ARRAY" => "Y"]);
+                    $arElement = $APPLICATION->IncludeComponent("mk:catalog.element", ".default", ["ID" => $iParentID, "ARRAY" => "Y"]);
                     $arRewrite["DETAIL_PAGE_URL"] = $arElement["DETAIL_PAGE_URL"];
                 }
                 $arProperties = [];
